@@ -1,4 +1,4 @@
-- name: ping the romote server
+- name: pinging the romote server
   host: Remotehost
   task:#list of tasks/modules/collections
   - name: pinging the server
