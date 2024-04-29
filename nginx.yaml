@@ -1,6 +1,6 @@
-- name: Installing and run nginx
+- name: Install and run nginx
   hosts: Remotehost
-  becom: yes #getting root access
+  become: yes #getting root access
   tasks:
   - name: Install the latest version of nginx
     ansible.builtin.dnf:
