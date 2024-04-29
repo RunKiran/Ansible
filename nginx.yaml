@@ -1,4 +1,13 @@
-- name:Installing nginx
-  host:
-  task:
-  - 
+- name: Installing and run nginx
+  hosts: Remotehost
+  becom: yes #getting root access
+  tasks:
+  - name: Install the latest version of nginx
+    ansible.builtin.dnf:
+      name: nginx
+      state: latest
+  - name: start nginx
+    ansible.builtin.service:
+      name: nginx
+      enabled: yes
+      state: started
