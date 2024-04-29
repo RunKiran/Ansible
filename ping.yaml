@@ -1,0 +1,5 @@
+- name: ping the romote server
+  host: Remote server
+  task:#list of tasks/modules/collections
+  - name: pinging the server
+    ansible.builtin.ping:
