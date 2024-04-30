@@ -9,8 +9,8 @@
   tasks:
   - name: print information
     vars: #variables declaration
-    course: "Terraform"
-    trainer: "kiran"
-    Duration: "20hrs"
+     course: "Terraform"
+     trainer: "kiran"
+     Duration: "20hrs"
     ansible.builtin.debug:
      msg: "hi we are learing {{course}} from  {{trainer}} duration {{Duration}}"
