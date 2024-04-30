@@ -1,6 +1,6 @@
 - name: variables from arguments
   hosts: localhost
-  task:
+  tasks:
   - name: get variables from arguments
     ansible.builtin.bugs:
      msg= "Hello {{person}} , {{whishes}}
