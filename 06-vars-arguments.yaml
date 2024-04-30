@@ -3,5 +3,5 @@
   tasks:
   - name: get variables from arguments
     ansible.builtin.debug:
-     msg= "Hello {{person}} , {{whishes}}"
+     msg: "Hello {{person}} , {{whishes}}"
 
