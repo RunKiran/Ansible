@@ -1,0 +1,20 @@
+- name: contions in ansible #ansible.builtin.command module and shell module 
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: check user exists or not
+    ansible.builtin.command: id expense
+    register: USER
+    ignore_errors: true
+
+  - name: print user info
+    ansible.bultin.debug:
+     msg: "user info: {{USER}}"
+
+  - name: create user
+    ansible.builtin.command: useradd expence
+    when: USER.rc != 0 #condtion
+
+  - name: say hello to user
+    ansible.builtin.debug:
+     msg: "Hello {{USER}}"       
