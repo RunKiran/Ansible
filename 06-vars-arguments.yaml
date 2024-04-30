@@ -3,6 +3,5 @@
   task:
   - name:get variables from arguments
     ansible.builtin.bugs:
-     msg= "Hello {{person}} and {{whishes}}
+     msg= "Hello {{person}} , {{whishes}}
 
-     
