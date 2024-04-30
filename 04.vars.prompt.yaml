@@ -5,7 +5,7 @@
       prompt: please enter your user name
       private: false
     - name: PASSWD
-      prmopt: please enter unser password
+      prompt: please enter unser password
       private: true
   tasks: 
   - name: user access
