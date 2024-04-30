@@ -7,6 +7,7 @@
     - name: PASSWD
       prmopt: please enter unser password
       private: true
-  tasks: user access
-  ansible.builtin.debug:
-   msg:"Hi,your {{USERNAME}}" and {{PASSWD}} is"
+  tasks: 
+  - name: user access
+    ansible.builtin.debug:
+     msg:"Hi,your {{USERNAME}}" and {{PASSWD}} is"
