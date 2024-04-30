@@ -1,3 +1,4 @@
+#playlevel variables
 - name: variables
   hosts: localhost
   vars: #variables declaration
