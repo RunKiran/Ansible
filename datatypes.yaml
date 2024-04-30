@@ -1,17 +1,17 @@
 - name: data types in ansible
   hosts: localhost
   vars:
-  course: "DevOps with AWS" #string
-  tools: #list
-  - linux
-  - shellscript
-  - ansible
-  - docker&kunbernetes
-  experience: #map/dictionary
-    devops: 2yrs #number
-    AWS: 2yrs
-    docker: 1yr
-  Realtimeproject: true  #boolean
+    course: "DevOps with AWS" #string
+    tools: #list
+    - linux
+    - shellscript
+    - ansible
+    - docker&kunbernetes
+    experience: #map/dictionary
+     devops: 2yrs #number
+     AWS: 2yrs
+     docker: 1yr
+    Realtimeproject: true  #boolean
   task:
   - name: print data types
     ansible.builtin.debug:
