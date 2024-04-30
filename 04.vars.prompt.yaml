@@ -1,0 +1,12 @@
+- name: variables prompting
+  hosts: localhost
+  vars_prmopt:
+  - name: USERNAME
+    prompt: please enter your user name
+    private: false
+  - name: PASSWD
+    prmopt: please enter unser password
+    private: true
+  tasks: user access
+    ansible.builtin.debug:
+     msg: "Hi,your {{USERNAME}}" and {{PASSWD}} is"
