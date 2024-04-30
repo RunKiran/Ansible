@@ -1,7 +1,7 @@
 - name: as functions in ansible using filters
   hosts: localhost
   vars_prompt: #prompts are always consider as text or string
-  - name: nummber
+  - name: number
     prompt: Please enter the number
     private: no
   tasks:
