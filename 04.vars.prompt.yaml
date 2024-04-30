@@ -6,7 +6,7 @@
       private: false
     - name: PASSWD
       prompt: please enter unser password
-      private: true
+      private: false
   tasks: 
   - name: user access
     ansible.builtin.debug:
