@@ -17,4 +17,4 @@
 
   - name: say hello to user
     ansible.builtin.debug:
-     msg: "Hello {{USER}}"       
+     msg: "Hello"       
