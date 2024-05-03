@@ -61,7 +61,9 @@
   hosts: localhost
   vars:
    MY_List:
-    [ { key': 'Name', 'value': 'sivakumar'}, {'key': 'course', 'value': 'Devops'}, {'key': 'duration', 'value': '120hrs'}]
+    - { key': 'Name', 'value': 'sivakumar'}
+    - {'key': 'course', 'value': 'Devops'}
+    - {'key': 'duration', 'value': '120hrs'}
 
   tasks:
   - name: befores converting to items
