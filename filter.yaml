@@ -61,7 +61,7 @@
   hosts: localhost
   vars:
    MY_List:
-    - { key': 'Name', 'value': 'sivakumar'}
+    - {'key': 'Name', 'value': 'sivakumar'}
     - {'key': 'course', 'value': 'Devops'}
     - {'key': 'duration', 'value': '120hrs'}
 
@@ -69,7 +69,7 @@
   - name: befores converting to dict
     ansible.builtin.debug:
      msg: " befote converting {{ MY_List }}"  
-  tasks:
+  
   - name: after converting to dict
     ansible.builtin.debug:
      msg: " after converting {{ MY_List | items2dict }} "     
