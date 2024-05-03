@@ -49,7 +49,7 @@
     course: Devops
     duration: 120hrs
   tasks:
-  - name: befores converting to items
+  - name: before converting to items
     ansible.builtin.debug:
      msg: " befote converting {{MY_Dictionary}}"  
   tasks:
@@ -68,10 +68,10 @@
   tasks:
   - name: befores converting to dict
     ansible.builtin.debug:
-     msg: " befote converting {{MY_List}}"  
+     msg: " befote converting {{ MY_List }}"  
   tasks:
   - name: after converting to dict
     ansible.builtin.debug:
-     msg: " after converting {{MY_List | items2dict}}"     
+     msg: " after converting {{ MY_List | items2dict }} "     
 
 
