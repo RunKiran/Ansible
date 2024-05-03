@@ -1,0 +1,11 @@
+- name: install packages
+  hosts: localhost
+  tasks:
+  - name: installin diff type of packages
+    ansible.builtin.dnf:
+     name: "{{item}}"
+     state: latest
+    loop:
+    - ansible
+    - mysql
+    - nginx 
