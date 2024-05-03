@@ -39,5 +39,5 @@
   tasks:
   - name:print the min and mx ages
     ansible.builtin.debug:
-     msg: "min age:{{ages | min}} ,  maxage: {{ages | max}}"     
+     msg: "min age:{{ ages | min }} ,  maxage: {{ ages | max }}"     
 
