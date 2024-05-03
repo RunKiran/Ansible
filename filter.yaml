@@ -34,6 +34,8 @@
 
 - name: print the min and max
   hosts: localhost
+  vars:
+   ages: [25 36 48 47]
   tasks:
   - name:print the min and mx ages
     ansible.builtin.debug:
