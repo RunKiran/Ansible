@@ -51,10 +51,10 @@
   tasks:
   - name: befores converting to items
     ansible.builtin.debug:
-     msg: " befote converting {{MY_Dictionay}}"  
+     msg: " befote converting {{MY_Dictionary}}"  
   tasks:
   - name: after converting to items
     ansible.builtin.debug:
-     msg: " after converting {{MY_Dictionay | dict2items}}"
+     msg: " after converting {{MY_Dictionary | dict2items}}"
 
 
