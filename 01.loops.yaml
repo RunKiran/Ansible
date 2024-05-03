@@ -4,7 +4,6 @@
   - name: print numbers
     ansible.builtin.debug:
      msg: "Hello {{items}}"
-
     loop:
     - linux
     - devops
