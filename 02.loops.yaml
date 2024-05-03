@@ -3,7 +3,7 @@
   tasks:
   - name: installin diff type of packages
     ansible.builtin.dnf:
-     name: "{{item}}"
+     name: "{{ item }}"
      state: latest
     loop:
     - ansible
