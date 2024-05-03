@@ -1,0 +1,11 @@
+- name: demo on loops
+  hosts: localhost
+  tasks:
+  - name: print numbers
+    ansiblr.builtin.debug:
+     msg: "Hello {{items}}"
+
+    loop:
+    - linux
+    - devops
+    - ansible 
