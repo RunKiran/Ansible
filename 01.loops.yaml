@@ -3,7 +3,7 @@
   tasks:
   - name: print numbers
     ansible.builtin.debug:
-     msg: "Hello {{items}}"
+     msg: "Hello {{item}}"
     loop:
     - linux
     - devops
