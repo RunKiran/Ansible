@@ -1,5 +1,6 @@
 - name: install packages
   hosts: localhost
+  become: yes
   tasks:
   - name: installin diff type of packages
     ansible.builtin.dnf:
