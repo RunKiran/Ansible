@@ -1,0 +1,24 @@
+- name:  ansible command vs ansible shell.
+  hosts: localhost
+  tasks:
+  - name: command module
+    ansible.builtin.command: "echo 'Hi this is from command module' > /tmp/command.txt"
+
+  -name: shell module
+    ansible.builtin.shell:   "echo 'Hi this is from shell module' > /tmp/command.txt"
+
+
+    # simple commands without the need of shell variables, envrironment and features like redirections, pipes, & go for command module.
+    # If we need to run complex commands or scripts go for shell module.
+    # Whatever works in command module, it will work in shell module, but vice versa is not true.
+
+    #Command module:
+#The Command module is used to execute simple commands without using a shell on the remote host. It's essentially running the command directly.
+# It's ideal for commands that don't require shell features like piping, redirection, or variable expansion.
+# It doesn't process shell metacharacters (e.g., |, >, <, &, etc.), so commands run exactly as specified.
+# It's generally safer and more predictable than using the Shell module because there's no shell to interpret the command
+
+# Shell module:
+# The Shell module is used to execute commands through the shell on the remote host, which allows for the use of shell features and constructs.
+# It can handle more complex commands involving piping, redirection, environment variable expansion, and shell built-ins.
+# It's useful when you need to execute commands that rely on shell functionality or need access to shell features.
